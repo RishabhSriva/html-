@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Adoptemate - Animal Welfare</title>
+    <link rel="stylesheet" href="cat2.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to Adoptemate</h1>
+        <p>Helping animals find loving homes</p>
+    </header>
+
+    <!-- Helpless Animals Section -->
+    <section id="helpless-animals">
+        <h2>Helpless Animals</h2>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTfTBSt-Y9WwHMmzfwdoYxczIYGI8EQYKvcA&usqp=CAU" alt="Helpless Animal">
+        <form>
+            <label for="animal-name">Animal Name:</label>
+            <input type="text" id="animal-name" name="animal-name" required><br>
+
+            <label for="help-type">Type of Help Needed:</label>
+            <select id="help-type" name="help-type">
+                <option value="medical">Medical Assistance</option>
+                <option value="shelter">Shelter and Care</option>
+                <option value="food">Food Support</option>
+                <option value="rescue">Immediate Rescue</option>
+                <!-- Add more options as needed -->
+            </select><br>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4" cols="50"></textarea><br>
+
+            <button type="button" onclick="submitHelpRequest()"><a href="about2.html">Submit Help Request</a></button>
+        </form>
+    </section>
+
+    <!-- Animal Rescue Section -->
+    <section id="animal-rescue">
+        <h2>Animal Rescue</h2>
+        <p>Contact us for immediate help: 831-889-0719</p>
+    </section>
+
+    <!-- Adoption Services Section -->
+    <section id="adoption-services">
+        <h2>Adoption Services</h2>
+        <p>Choose an animal for adoption:</p>
+        <select id="adoption-select">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="parrot">Parrot</option>
+            <option value="rabbit">Rabbit</option>
+            <option value="monkey">Monkey</option>
+        </select>
+        <button onclick="adoptAnimal()">Adopt Now</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>Donate</h2>
+        <p>Help us make a difference. Contribute to our cause.</p>
+        <button onclick="openDonationForm()">Donate</button>
+        <div id="donation-form" style="display: none;">
+            <!-- Include a donation form -->
+            <form>
+                <!-- Your donation form fields go here -->
+            </form>
+        </div>
+    </section>
+
+    <!-- Education and Resources Section -->
+    <section id="education">
+        <h2>Education and Resources</h2>
+        <p>Pet Care Tips: Learn how to care for your pets.</p>
+        <p>Educational Materials: Explore articles and resources about animal welfare.</p>
+        <button onclick="Readmore()"><a href="about.html">Read more</a></button>
+    </section>
+
+    <!-- Legal and Privacy Information Section -->
+    <section id="legal">
+        <h2>Legal and Privacy Information</h2>
+        <p>Include necessary disclaimers, terms of use, and privacy policies to establish trust with visitors.</p>
+    </section>
+
+    <!-- JavaScript (for future enhancements) -->
+    <script src="script.js"></script>
+</body>
+</html>
